@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Astroship</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="./public/style/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style type="text/tailwindcss">
+        @theme {
+    --font-sans: "Bricolage Grotesque",
+               "Roboto",
+               ui-sans-serif,
+               system-ui,
+               sans-serif;
+  }
+</style>
+</head>
+
+<body>
+    <header>
+        <div class="mx-auto w-screen max-w-7xl mt-2 lg:mb-0">
+            <div class="bg-gray-100">
+
+
+
+                <nav class="bg-white    top-0 start-0 ">
+                    <div class="mx-auto w-screen max-w-7xl flex flex-wrap items-center justify-between  p-4">
+                        <a href="#">
+                            <span class="self-center text-lg text-heading whitespace-nowrap font-bold">
+                                Astro<span class="font-medium text-slate-500">ship</span>
+                            </span>
+                        </a>
+                        <div class="inline-flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+                            <button type="button"
+                                class="text-white bg-black rounded-2xl hover:bg-brand-strong box-border border border-transparent focus:ring-4 focus:ring-brand-medium shadow-xs font-medium leading-5 rounded-base text-sm px-3 py-2 focus:outline-none hover:bg-gray-800">Get
+                                started</button>
+                            <button data-collapse-toggle="navbar-cta" type="button"
+                                class="inline-flex items-center p-2 w-9 h-9 justify-center text-sm text-body rounded-base md:hidden hover:bg-neutral-secondary-soft hover:text-heading focus:outline-none focus:ring-2 focus:ring-neutral-tertiary"
+                                aria-controls="navbar-cta" aria-expanded="false">
+                                <span class="sr-only ">Open main menu</span>
+                                <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24"
+                                    height="24" fill="none" viewBox="0 0 24 24">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-width="2"
+                                        d="M5 7h14M5 12h14M5 17h14" />
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
+                            id="navbar-cta">
+                            <ul
+                                class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-default rounded-base bg-neutral-secondary-soft md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white-primary gap-x-7">
+
+                                <li>
+                                    <a href="./index.html"
+                                        class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent hover:text-gray-600">Features</a>
+                                </li>
+                                <li>
+                                    <a href="./about.html"
+                                        class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent hover:text-gray-600">About</a>
+                                </li>
+                                <li>
+                                    <a href="./blog.html"
+                                        class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent hover:text-gray-600">
+                                        Blog</a>
+                                </li>
+                                <li>
+                                    <a href="./contact.html"
+                                        class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent hover:text-gray-600">Contact</a>
+                                </li>
+                                <li>
+                                    <a href="./404.html"
+                                        class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent hover:text-gray-600">404
+                                        page</a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent hover:text-gray-600">Pro
+                                        Version
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+
+            </div>
+    </header>
+    <section class="header">
+        <div class="mx-auto w-screen max-w-7xl mt-20">
+            <h1 class="text-4xl lg:text-5xl font-bold lg:tracking-tight text-center">About</h1>
+            <p class="text-lg mt-4 text-slate-600 text-center">We are a small passionate team.</p>
+        </div>
+    </section>
+    <section class="details py-16 px-4">
+        <div class="mx-auto w-full max-w-5xl">
+
+            <div class="content">
+                <h2 class="font-bold text-3xl text-gray-800 mt-10">
+                    Empowering the world with Astro.
+                </h2>
+                <p class="text-lg leading-relaxed text-slate-500 max-w-2xl mt-6">
+                    We're a multi-cultural team from around the world! We come from diverse
+                    backgrounds, bringing different personalities, experiences and skills to
+                    the job. This is what makes our team so special.
+                </p>
+            </div>
+
+            <div class="cards grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-10">
+
+                <div class="card group">
+                    <div class="image overflow-hidden rounded-sm">
+                        <img src="./public/assets/images/photo-1580489944761-15a19d654956.jfif" loading="lazy"
+                            class="w-full aspect-square object-cover object-center transition duration-300 group-hover:-translate-y-1 group-hover:shadow-xl">
+                    </div>
+                    <h2 class="text-lg text-gray-800 text-center mt-3">Janette Lynch</h2>
+                    <h3 class="text-sm text-slate-500 text-center">Senior Director</h3>
+                </div>
+
+                <div class="card group">
+                    <div class="image overflow-hidden rounded-sm">
+                        <img src="./public/assets/images/photo-1633332755192-727a05c4013d.jfif" loading="lazy"
+                            class="w-full aspect-square object-cover object-center transition duration-300 group-hover:-translate-y-1 group-hover:shadow-xl">
+                    </div>
+                    <h2 class="text-lg text-gray-800 text-center mt-3">Marcell Ziemann</h2>
+                    <h3 class="text-sm text-slate-500 text-center">Principal Strategist</h3>
+                </div>
+
+                <div class="card group">
+                    <div class="image overflow-hidden rounded-sm">
+                        <img src="./public/assets/images/photo-1535713875002-d1d0cf377fde.jfif" loading="lazy"
+                            class="w-full aspect-square object-cover object-center transition duration-300 group-hover:-translate-y-1 group-hover:shadow-xl">
+                    </div>
+                    <h2 class="text-lg text-gray-800 text-center mt-3">Robert Palmer</h2>
+                    <h3 class="text-sm text-slate-500 text-center">Marketing Engineer</h3>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <footer class="mt-20 mb-15">
+        <p class="text-center text-sm text-slate-500">
+            Copyright © 2025 Astroship. All rights reserved.</p>
+        <p class="text-center text-sm text-slate-500 mt-2">Made by <a
+                href="https://www.linkedin.com/in/ahmed-galal-1307b837a" target="_blank"
+                class="hover:underline text-sm"><strong>Ahmed Galal</strong></a></p>
+    </footer>
+    <script src="https://unpkg.com/flowbite@1.4.1/dist/flowbite.js"></script>
+</body>
+
+</html>
